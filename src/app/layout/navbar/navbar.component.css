@@ -1,0 +1,14 @@
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #d0d0c1;
+  }
+  
+  .navbar-nav > li {
+    font-size: 18px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
+  .logo-img {
+    height: 40px;
+  }
+  
