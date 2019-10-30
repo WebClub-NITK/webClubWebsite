@@ -1,0 +1,70 @@
+<div class="top-heading">
+    <h1>{{title}}</h1>
+</div>
+<div class="body">
+    <div class="constestsSpace" *ngFor="let items of array; index as i">
+            <span class="imgBox" style="display: block;">
+                <img class="img" src ={{items.Image}} onerror = "this.src='../../assets/default.png'"/>
+            </span>
+            <div class="relationship">
+            <div class="contestTitle" id={{id}}>
+                {{items.Name}}
+            </div>
+            <div class="details" >{{items.Post}}</div>
+        </div>
+        <div class="profileButtons">
+                <a href={{items.Github}} title={{items.Github}} target="_blank" style="color: black;"><i class='fa fa-github'></i>
+                    <img src="../../assets/github-logo.svg"/>
+                </a>
+        <span>&emsp;</span>
+        <a class="linkedin social" href={{items.Linkedin}}
+        title={{items.Linkedin}} target="_blank">
+        <i class="fa fa-linkedin">
+        </i>
+        <img src="../../assets/linkedin.svg"/>
+        </a>
+        <span>&emsp;</span>
+        <a href={{items.Email}} title={{items.Email}} target="_blank">
+            <img src="../../assets/gmail.svg"/>
+        </a>
+        </div> 
+        </div>
+</div>
+<div class = "creating-menu">
+        <ul (click)="onClick($event)">
+            <li>Post Bearers</li>
+            <li>Final Years</li>
+            <li>Third Years</li>
+            <li>Second Years</li>
+            <li>First Years</li>
+            <li>Alumni 2k18</li>
+            <li>Alumni 2k17</li>
+            <li>Alumni 2k16</li>
+            <li>Alumni 2k15</li>
+        </ul>
+    </div>
+
+<div class="footer">
+        <footer style="padding-top: .5em; background-color: rgba(78, 199, 240, 0.2)">
+
+                <section id='footer' style="height: 14em;" >
+        
+                    <h1 class='footer-heading' >WEB CLUB NITK</h1>
+                    <div class='footer-social'>
+                        <a href="http://www.facebook.com" style="color: black;">
+                            <img src="../../assets/facebook.svg" alt="image not loaded"/>
+                        </a>
+                        <a href="http://github.com" style="color: black;">
+                            <img src="../../assets/github-logo.svg" alt="image not loaded"/>
+                        </a>
+                    </div>
+                    <div class='footer-nav'>
+                        <a href="/">HOME</a>
+                        <a href="/events">EVENTS</a>
+                        <a href="/contests">CONTESTS</a>
+                        <a href="/projects">PROJECTS</a>
+                        <a href="/team">TEAM</a>
+                    </div>
+                </section>
+            </footer>
+</div>
